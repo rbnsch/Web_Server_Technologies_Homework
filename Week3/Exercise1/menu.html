@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <!-- Form for menu
+        results will be sent via http post to order.php  -->
+        <form action="order.php" method="post">
+            Main meal - Choose one garnish
+            <br><br>
+            Grilled pork fillets with: 
+            <select name="garnish">
+                <option value="fried potatos">fried potatoes</option>
+                <option value="carrots">carrots</option>
+                <option value="mushrooms">mushrooms</option>
+                <option value="broccoli">broccoli</option>
+            </select>
+            <br><br><br>
+            Dessert - Choose as many as you like!
+            <br><br>
+            <select name="dessert[]" multiple>
+                <option value="Crème Caramel">Cr&egrave;me Caramel</option>
+                <option value="Blackcurrant Cheesecake">Blackcurrant Cheesecake</option>
+                <option value="Chocolate Mousse">Chocolate Mousse</option>
+                <option value="Lemon Soufflé">Lemon Souffl&eacute;</option>
+            </select>
+            
+            <br><br>
+            Coffee: Black
+            <input type="radio" name="coffee" value="Black" /> With cream
+            <input type="radio" name="coffee" value="With cream" />
+            
+        
+            <br><br>
+            <input type="submit" value="Order" name=""/>
+        </form>
+    </body>
+</html>
